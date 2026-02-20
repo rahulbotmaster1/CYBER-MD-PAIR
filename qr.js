@@ -35,7 +35,7 @@ function getMegaFileId(url) {
 }
 
 router.get("/", async (req, res) => {
-    const sessionId =
+    const sessionId = "CYBER-MD~"
         Date.now().toString() + Math.random().toString(36).substr(2, 9);
     const dirs = `./qr_sessions/session_${sessionId}`;
 
