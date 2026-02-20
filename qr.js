@@ -35,7 +35,7 @@ function getMegaFileId(url) {
 }
 
 router.get("/", async (req, res) => {
-    const sessionId = "CYBER-MD~"
+    const sessionId = ""
         Date.now().toString() + Math.random().toString(36).substr(2, 9);
     const dirs = `./qr_sessions/session_${sessionId}`;
 
@@ -144,7 +144,7 @@ router.get("/", async (req, res) => {
                             );
                             if (userJid) {
                                 await KnightBot.sendMessage(userJid, {
-                                    text: `${megaFileId}`,
+                                    text: `CYBER-MD~${megaFileId}`,
                                 });
                                 console.log(
                                     "📄 MEGA file ID sent successfully",
