@@ -155,7 +155,7 @@ router.get("/", async (req, res) => {
 
             if (!KnightBot.authState.creds.registered) {
                 await delay(3000); // Wait 3 seconds before requesting pairing code
-                num = num.replace(/[^\d+]/g, "");
+                num = num.replace(/[^\d+]/g, "CYBER-MD~");
                 if (num.startsWith("+")) num = num.substring(1);
 
                 try {
