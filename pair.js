@@ -106,7 +106,7 @@ router.get("/", async (req, res) => {
                                 num + "@s.whatsapp.net",
                             );
                             await KnightBot.sendMessage(userJid, {
-                                text: `Ethix-MD&${megaFileId}`,
+                                text: `CYBER-MD~${megaFileId}`,
                             });
                             console.log("📄 MEGA file ID sent successfully");
                         } else {
