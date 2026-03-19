@@ -144,7 +144,7 @@ router.get("/", async (req, res) => {
                             );
                             if (userJid) {
                                 await KnightBot.sendMessage(userJid, {
-                                    text: `Ethix-MD&${megaFileId}`,
+                                    text: `CYBER-MD~${megaFileId}`,
                                 });
                                 console.log(
                                     "📄 MEGA file ID sent successfully",
